@@ -1,27 +1,28 @@
-# <%= title %> Format
+# NBIS-course: Extension For Quarto
+
+Quarto extension for NBIS presentations.
 
 ## Installing
 
-*TODO*: Replace the `<github-organization>` with your GitHub
-organization.
-
 ```bash
-quarto use template <github-organization>/<%= filesafename %>
+quarto add percyfal/nbis-quarto-revealjs
 ```
 
-This will install the extension and create an example qmd file that
-you can use as a starting place for your article.
+This will install the extension under the `_extensions` subdirectory.
+If you're using version control, you will want to check in this
+directory.
 
 ## Using
 
-*TODO*: Describe how to use your format.
+Add the following to the document yaml header:
 
-## Format Options
-
-*TODO*: If your format has options that can be set via document
-metadata, describe them.
+```yaml
+---
+format: nbis-quarto-revealjs
+---
+```
 
 ## Example
 
 Here is the source code for a minimal sample document:
-[example.qmd](example.qmd).
+[template.qmd](template.qmd).
