@@ -1,4 +1,4 @@
-# NBIS-course: Extension For Quarto
+# nbis-quarto-reveals
 
 Quarto extension for NBIS presentations.
 
