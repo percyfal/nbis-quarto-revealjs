@@ -14,13 +14,21 @@ contributes:
       width: 1280
       height: 720
       margin: 0.08
+      theme: [nbis.scss]
+      title-logo-nbis: assets/logo/nbislogo-green-teal-txt.svg
+      title-logo-scilifelab: assets/logo/SciLifeLab_Logotype_Green_POS.png
+      header-logo-left: assets/logo/nbislogo-green-teal.svg
+      header-logo-left-height: 50px
+      header-logo-right: assets/logo/SciLifeLab_symbol_green.png
+      header-logo-right-height: 50px
       filters:
         - reveal-logo.lua
         - ultitle.lua
     revealjs:
-      theme: [nbis.scss]
-      header-logo-left: "assets/logo/nbislogo-green-teal.svg"
-      header-logo-left-height: 50px
-      header-logo-right: "assets/logo/SciLifeLab_symbol_green.png"
-      header-logo-right-height: 50px
       ultitle: true
+    revealjs+splittitle:
+      title-slide-bg:
+        left: transparent
+        right: "#c0d6d8"
+      template-partials:
+        - splittitle/title-slide.html

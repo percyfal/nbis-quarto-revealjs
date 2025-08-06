@@ -73,11 +73,6 @@ if quarto.doc.is_format('revealjs') then
 	 return doc
       end
 
-      -- if no header logo is specified, return the document as is
-      if meta['header-logo-left'] == '' and meta['header-logo-right'] == '' then
-	 return doc
-      end
-
       -- make divs structure for holding text and logo.
       local header_img_left = makeLogo(meta['header-logo-left'], meta['header-logo-left-url'],
 				       meta['header-logo-left-height'], "header-logo-left")
