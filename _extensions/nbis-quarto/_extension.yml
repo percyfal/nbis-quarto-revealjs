@@ -17,6 +17,8 @@ contributes:
       theme: [nbis.scss]
       title-logo-nbis: assets/logo/nbislogo-green-teal-txt.svg
       title-logo-scilifelab: assets/logo/SciLifeLab_Logotype_Green_POS.png
+      title-logo-padding: 100px
+      title-logo-show: true
       header-logo-left: assets/logo/nbislogo-green-teal.svg
       header-logo-left-height: 50px
       header-logo-right: assets/logo/SciLifeLab_symbol_green.png

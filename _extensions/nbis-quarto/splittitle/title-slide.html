@@ -11,19 +11,20 @@
       $if(date)$
       <h4 class="date">$date$</h4>
       $endif$
-      <div style="background: green; height: 100vh; overflow-y: hidden;">
-<!--style="height: max(calc( var(--vh, 1vh) * 100), 100%); width: 100%; background: green; align-content: center;">-->
-      <div class="quarto-figure quarto-figure-center" style="width: 100%">
-	<figure>
-	  <p><img data-src="$title-logo-nbis$" style="width:50.0%"></p>
-	</figure>
+      $if(title-logo-show)$
+      <div style="width: 100%; padding-top: $title-logo-padding$;">
+	<div class="quarto-figure quarto-figure-center" style="width: 100%">
+	  <figure>
+	    <p><img data-src="$title-logo-nbis$" style="width:40.0%"></p>
+	  </figure>
+	</div>
+	<div class="quarto-figure quarto-figure-center" style="width: 100%;">
+	  <figure>
+	    <p><img data-src="$title-logo-scilifelab$" style="width:50.0%"></p>
+	  </figure>
+	</div>
       </div>
-      <div class="quarto-figure quarto-figure-center" style="width: 100%;">
-	<figure>
-	  <p><img data-src="$title-logo-scilifelab$" style="width:60.0%"></p>
-	</figure>
-      </div>
-      </div>
+      $endif$
     </div>
     <div class="column" style="width:63%">
       $if(title-slide-img)$

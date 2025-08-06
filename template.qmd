@@ -4,10 +4,11 @@ author: John Doe
 institute: NBIS
 date: today
 format:
-  nbis-quarto-revealjs:
+  nbis-quarto-revealjs+splittitle:
     ultitle: true
     header-logo-left-url: https://nbis.se
     header-logo-right-url: https://scilifelab.se
+    title-logo-show: false
 ---
 
 ## Usage
